@@ -3,6 +3,8 @@
 
 Just testing out my react skills with a jeopardy game. Uses data from [jService](http://jservice.io).
 
+Working demo [here](http://rgtlhosting.com/jeopardy/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
