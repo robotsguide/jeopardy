@@ -10,6 +10,7 @@ class App extends Component {
           Jeopardy
         </header>
         <JeopardyData />
+        created by Keith Allen
       </div>
     );
   }

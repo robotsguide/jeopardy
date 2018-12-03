@@ -11,10 +11,11 @@
   background-color: #282c34;
   min-height: 100px;
   display: flex;
+  font-family: impact;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 30px;
   color: white;
 }
 
@@ -100,4 +101,15 @@
   border-radius: 20px;
   text-transform: capitalize;
   font-size: 25px;
+}
+
+.score-container {
+  width: 100%;
+  font-size: 22px;
+  font-family: impact;
+  color: #fff;
+  background: #282c34;
+  margin:0 auto 20px;
+  padding: 20px 0;
+
 }

@@ -185,7 +185,17 @@ class JeopardyData extends Component {
         </div>
       )
     })
-    this.setState({categories: categories});
+    let endGameButton = (
+      <button onClick={() => this.showGameResults()}>End Game</button>
+    )
+    let reloadCategoriesButton = (
+      <button onClick={() => this.resetGame()}>Reload Categories</button>
+    )
+    this.setState({
+      categories: categories,
+      endGameButton: endGameButton,
+      reloadCategoriesButton: reloadCategoriesButton
+    });
   }
 
   componentWillMount() {
@@ -214,7 +224,10 @@ class JeopardyData extends Component {
         {this.state.currentQuestion}
         {this.state.answerResult}
         {this.state.gameResults}
-        Your Score: {this.state.currentScore}
+        <div className="score-container">
+          Your Score: {this.state.currentScore}<br />
+        {this.state.endGameButton} {this.state.reloadCategoriesButton}
+        </div>
       </div>
     )
   }
